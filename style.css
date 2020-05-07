@@ -1,0 +1,388 @@
+.bg-clr{
+    background-color: #316DC3;
+}
+.box1, .box2, .box3{
+    text-align: center;
+}
+.bg-clr2 a{
+    color: white;
+    margin: 0px 8px;
+}
+.box3 a{
+    display: inline-block;
+    border: 1px solid black;
+    color: rgb(85, 74, 74);
+    margin: 2px 5px;
+    background-color: #fff;
+    padding: 3px 5px;
+    cursor: pointer;
+    text-decoration:none;
+    
+}
+.box3 a:hover{
+    color: rgb(85, 74, 74); 
+    text-decoration: none;
+}
+#navbar {
+    background-color: rgb(236, 230, 230);
+  }
+  
+  .sticky {
+    z-index: 1;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+/* sticky navbar end */
+
+
+/* navbar logo */
+
+.navbar_logo img{
+    width: 200px;
+    height: 60px;
+    margin: 0 0 0 25px;
+}
+
+/* navbar_menu */
+.navbar_menu{
+    height: 60px;;
+    margin-left: 300px;
+}
+.navbar_menu ul {
+    text-transform: capitalize;
+    list-style: none;
+    display: inline-flex; /* inline-flex*/
+}
+.navbar_menu ul li{
+    margin: 10px 0px;
+    padding:  5px 10px;
+    border-radius: 100px;
+}
+.navbar_menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.active_li {
+    background-color: blue;
+    font-weight: bold;
+}
+.active_li a{
+    color: white !important;
+}
+.navbar_menu ul li:hover{
+    background-color: blue;
+}
+.navbar_menu ul li:hover a{
+    color: white ;
+}
+.first_hover_menu{
+    display :none;
+}
+.navbar_menu ul li:hover .first_hover_menu{
+    z-index: 1;
+    display: block;
+    position: absolute;
+    top: 55px;
+    min-width: 200px;
+    background-color: white;
+}
+.navbar_menu ul li:hover .first_hover_menu ul{
+    display: block;
+}
+.navbar_menu ul li:hover .first_hover_menu ul li a{
+    color: black ;
+}
+.first_hover_menu ul li:hover {
+    border-radius: 0 !important;
+    background: blue ;
+    color: white ;
+    padding-left: 10px; 
+}
+.navbar_menu ul li:hover .first_hover_menu ul li:hover a{
+    color: white ;
+    margin-left: 10px;
+}
+.first_hover_menu .fa-angle-right{
+    float: right;
+    padding-right: 10px;
+}
+
+/* css for 2nd menu */
+.second_hover_menu{
+    display: none;   
+}
+.hover_me:hover .second_hover_menu{
+    display: block;
+    position: absolute;
+    margin-left: 190px;
+    min-width: max-content;
+    background-color:  white;
+}
+.navbar_menu ul li:hover .hover_me:hover .second_hover_menu ul li a{
+    color: black ;
+}
+.navbar_menu ul li:hover .hover_me:hover .second_hover_menu ul li:hover a{
+    color: white;
+    padding-left: 10px;
+}
+/* css for 3rd menu */
+.second_hover_menu .fa-angle-right{
+    float: right;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.third_hover_menu{
+    display: none;
+}
+.second_hover:hover .third_hover_menu{
+    display: block;
+    position: absolute;
+    margin-left: 200px;
+    min-width: max-content;
+    background-color:  white;
+}
+.navbar_menu ul li:hover .hover_me:hover .second_hover_menu .second_hover:hover .third_hover_menu ul li a{
+    color: black ;
+}
+.navbar_menu ul li:hover .hover_me:hover .second_hover_menu .second_hover:hover .third_hover_menu ul li:hover a{
+    color: white;
+    padding-left: 20px;
+}
+
+
+
+/* Css for responsive*/
+
+@media screen and (max-width: 1276px){
+    .navbar_menu{
+        margin-left: 325px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .navbar_menu{
+        margin-left: 250px;
+    }
+}
+@media screen and (max-width: 1125px){
+    .navbar_menu{
+        margin-left: 175px;
+    }
+}
+@media screen and (max-width: 1050px){
+    .navbar_menu{
+        margin-left: 105px;
+    }
+}
+@media screen and (max-width: 991px){
+    .navbar_menu{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 ;
+        height: auto;
+        font-size: 20px;
+    }
+    .navbar_menu ul {
+        display: block;
+        
+    }
+    .navbar_menu ul li{
+        padding-left: 60px;
+        border-radius:0px ;
+    }
+    
+    .fa-angle-down{
+        float: right;
+        padding: 0 20px;
+    }
+    .navbar_menu ul li:hover .first_hover_menu, .second_hover:hover .third_hover_menu, .hover_me:hover .second_hover_menu{
+        position: relative;
+        top: 0;
+    }
+}
+
+  
+
+.marquee{
+    margin: 10px 100px;
+    color: white;
+}
+.blue{
+  font-weight: bold;
+      color: blue;
+  }
+  .green{
+      font-weight: bold;
+      color: green;
+  }
+  .inner{
+      font-family: 'Merriweather', serif;
+      text-align: justify;
+      width: 90%;
+      padding: 20px 10px;
+  }
+  
+  .heading{
+      font-family: 'Merriweather', serif;
+      text-transform: uppercase;
+      overflow: hidden; 
+      text-align: center  ;
+      font-size: 250%;
+      padding-bottom: 10px;
+  }
+  .logo-after-heading{
+      Padding-top: 10px;
+      text-align: center;
+      margin: auto;
+      position: relative;
+      margin: 0 auto;
+      max-width: 200px;
+      position: relative
+  }
+  .logo-after-heading img{
+      width: 40px;
+      height: 40px;
+  
+  }
+   .logo-after-heading::before{ 
+    
+      content: "";
+      height: 2px;
+      position: absolute;
+      left:1rem;
+      top: 40px;
+      width: 50px;
+      background: #427900;
+  }
+  .logo-after-heading::after{
+      content: "";
+      height: 2px;
+      position: absolute;
+      right:1rem;
+      top: 40px;
+      width: 50px;
+      background: #427900;
+  }
+  
+  /* .stat{
+      background-color: ;
+  } */
+  #img1{
+      width: 200px;
+      margin: 0px 40px;
+  }
+ .middle{
+     padding: 20px 20px 20px;
+     
+     background-color: blue;
+     text-align: center;
+ }
+ .inner-width{
+     display: flex; 
+     margin: auto;
+ }
+ .col{
+     flex: 1;
+     text-align: center;
+     padding: 2px;
+     color:white;
+     text-transform: uppercase;
+
+ }
+ .col img{
+     width: 40px;
+     height: 40px;
+ }
+ .num{
+    font-size: 60px;
+ }
+ .text{
+     font-size: 20px;
+     
+ }
+ /* .center{
+     text-align: center;
+ } */
+ .line{
+     width: 6%;
+     right: 9%;
+     
+
+ }
+ .line2{
+     width: 6%;
+     right: 2%;
+ }
+ .online{
+     text-align: center;
+     color: blue;
+     margin: 40px 20px 20px;
+ }
+ .shadow{
+  
+     box-shadow: rgb(56, 49, 53);
+ }
+ #img2{
+     margin: 10px;
+     width: 20%;
+     height: 20%;
+ }
+ .projects{
+     color: blue;
+ }
+.mrg{
+     margin: 8px;
+}
+.mrg1{
+    margin: 0px 50px;
+}
+.mrg2{
+    margin:0px 60px ;
+} 
+.img3{
+    margin: 20px;
+    height: auto;
+}
+.img3 .image img{
+    margin:15px 0;
+    width: 20%;
+    height: auto;
+    float: left;
+    padding: 3px;
+    
+}
+.clr2{
+    color:green;
+}
+.clr3{
+    color: green;
+    
+}
+
+.link{
+    margin-left: 70px;
+}
+.link2{
+    margin-left: 140px;
+}
+#none{
+    list-style: none;
+    margin-left: 105px ;
+    
+}
+#none li{
+    float: left;
+}
+#none li a{
+   color: white;
+    margin: 0 10px;
+    
+}
+
+
+   
